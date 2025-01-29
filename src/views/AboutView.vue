@@ -11,17 +11,15 @@
         </div>
         <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div class="md:pr-12">
-            <div
+            <!-- <div
               class="text-orange-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-300 mt-8">
               <i class="fas fa-rocket text-xl"></i>
-            </div>
-            <h3 class="text-3xl font-semibold">A growing company</h3>
-            <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-              The extension comes with three pre-built pages to help you get
-              started faster. You can change the text and images and you're
-              good to go.
+            </div> -->
+            <h3 class="text-3xl text-blue-900 font-semibold">Notre Mission</h3>
+            <p class="mt-4 text-lg leading-relaxed text-orange-500">
+              Démocratiser l'utilisation des outils numériques pour les PME en Afrique de l'Ouest.
             </p>
-            <ul class="list-none mt-6">
+            <!-- <ul class="list-none mt-6">
               <li class="py-2">
                 <div class="flex items-center">
                   <div>
@@ -44,7 +42,7 @@
                         class="fab fa-html5"></i></span>
                   </div>
                   <div>
-                    <h4 class="text-blueGray-500">Amazing page examples</h4>
+                    <h4 class="text-blue-500">Notre Mission</h4>
                   </div>
                 </div>
               </li>
@@ -60,7 +58,7 @@
                   </div>
                 </div>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>
@@ -68,9 +66,9 @@
     </section>
 
     <!-- Section Notre Équipe -->
-    <section class="team py-12">
+    <section class="team py-10">
       <div class="container items-center mx-auto px-4 text-center">
-        <h2 class="text-3xl font-semibold text-blue-900 mb-6">Notre Équipe</h2>
+        <h2 class="text-3xl font-semibold text-blue-900">Notre Équipe</h2>
         <div class="equipe grid grid-cols-4 md:grid-cols-4 gap-6">
           <TeamCard v-for="(member, index) in people" :key="index" :member="member" />
         </div>
@@ -122,12 +120,7 @@ export default {
 </script>
 
 <style scoped>
-.card-client {
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 .team{
   display: flex;
   flex-direction: column;
