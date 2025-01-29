@@ -5,7 +5,7 @@
           <div class="w-full lg:w-6/12 px-4">
             <h4 class="text-3xl font-semibold text-orange-500">Restons en contact !</h4>
             <h5 class="text-lg mt-0 mb-2 text-orange-500">
-              Find us on any of these platforms, we respond 1-2 business days.
+              Trouvez-nous sur l'une de ces plateformes, nous vous répondons dans un délai de 1 à 2 jours ouvrables.
             </h5>
             <div class="mt-6 lg:mb-0 mb-6">
               <button

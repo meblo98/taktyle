@@ -15,7 +15,7 @@
               class="text-orange-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-300 mt-8">
               <i class="fas fa-rocket text-xl"></i>
             </div> -->
-            <h3 class="text-3xl text-blue-900 font-semibold">Notre Mission</h3>
+            <h3 class="text-3xl text-blue font-semibold">Notre Mission</h3>
             <p class="mt-4 text-lg leading-relaxed text-orange-500">
               Démocratiser l'utilisation des outils numériques pour les PME en Afrique de l'Ouest.
             </p>
@@ -68,11 +68,8 @@
     <!-- Section Notre Équipe -->
     <section class="team py-10">
       <div class="container items-center mx-auto px-4 text-center">
-        <h2 class="text-3xl font-semibold text-blue-900">Notre Équipe</h2>
-        <div class="equipe grid grid-cols-4 md:grid-cols-4 gap-6">
-          <TeamCard v-for="(member, index) in people" :key="index" :member="member" />
-        </div>
-
+        <h2 class="text-3xl font-semibold text-blue">Notre Équipe</h2>
+           <TeamCard/>
       </div>
     </section>
 
@@ -88,48 +85,11 @@ export default {
   components: {
     TeamCard // Déclarer le composant
   },
-  data() {
-    return {
-      people: [
-        {
-          name: "Mouhamed Lo",
-          role: "Développeur Web",
-          image: new URL('@/assets/Images/team.jpg', import.meta.url).href,
-        },
-        {
-          name: "Mouhamed Lo",
-          role: "Développeur Web",
-          image: new URL('@/assets/Images/team.jpg', import.meta.url).href,
-        },
-        {
-          name: "Adama Dabo",
-          role: "Designer UX/UI",
-          image: new URL('@/assets/Images/team.jpg', import.meta.url).href,
-        },
-        {
-          name: "Aissatou Diallo",
-          role: "Chef de Projet",
-          image: new URL('@/assets/Images/team.jpg', import.meta.url).href,
-        },
 
-      ],
-
-    };
-  }
 };
 </script>
 
 <style scoped>
 
-.team{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-}
-.equipe{
-  left: 0;
-  right: 0;
-}
 </style>
