@@ -55,7 +55,7 @@ export default {
           name: 'À Propos',
         },
         {
-          path: '/solution',
+          path: '/nos-solution',
           name: 'Nos Solutions',
         },
         {

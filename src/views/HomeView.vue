@@ -1,38 +1,9 @@
-<!-- <script setup>
-import HeroSection from '@/components/HeroSection.vue';
-import Cards from '@/components/Cards.vue';
-</script>
-
-<template>
-  <main>
-    <div class="container">
-      <HeroSection/>
-      <div class="solution">
-        <h2>Our Solution</h2>
-        <p></p>
-        <div class="solution__items">
-          <Cards/>
-        </div>
-      </div>
-    </div>
- 
-  </main>
-</template>
-
-<style>
-
-  .container{
-    margin-top: 20px;
-  }
-
-</style> -->
-
 <template>
   <div>
     <HeroSection />
     <section class="solutions py-10 bg-gray-100">
       <div class="container mx-auto">
-        <h2 class="text-center text-2xl font-bold mb-6">Nos Solutions</h2>
+        <h2 class="text-center text-2xl text-orange-500 font-bold mb-6">Nos Solutions</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
           <SolutionsCard 
             icon="fas fa-chart-line" 
@@ -59,24 +30,15 @@ import Cards from '@/components/Cards.vue';
     </section>
     <section class="testimonials py-10">
       <div class="container mx-auto">
-        <h2 class="text-center text-2xl font-bold mb-6">Ce Que Disent Nos Clients</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <TestimonialCard 
-            photo="/assets/client1.jpg" 
-            text="Grâce à Taktyl Group, nous avons augmenté notre productivité de 30 %." 
-            name="Client 1"
-          />
-          <TestimonialCard 
-            photo="/assets/client2.jpg" 
-            text="Les outils de Taktyl Group sont simples et efficaces." 
-            name="Client 2"
-          />
+        <h2 class="text-center text-2xl text-orange-500 font-bold mb-6">Ce Que Disent Nos Clients</h2>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <TestimonialCard/>
         </div>
       </div>
     </section>
-    <section class="cta text-center bg-blue text-white py-10">
+    <section class="cta text-center bg-white text-orange-500 py-10">
       <h2 class="text-2xl font-bold mb-5">Prêt à booster votre entreprise ?</h2>
-      <router-link to="/contact" class="bg-blue-500 text-white py-4 px-12 rounded-full hover:bg-blue-600">Contactez-nous dès aujourd'hui !</router-link>
+      <router-link to="/contact" class="bg-orange-500 text-white py-4 px-12 rounded-full hover:bg-blue-600">Contactez-nous dès aujourd'hui !</router-link>
     </section>
   </div>
 </template>

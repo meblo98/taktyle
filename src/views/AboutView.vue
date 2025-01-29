@@ -12,7 +12,7 @@
         <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div class="md:pr-12">
             <div
-              class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8">
+              class="text-orange-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-300 mt-8">
               <i class="fas fa-rocket text-xl"></i>
             </div>
             <h3 class="text-3xl font-semibold">A growing company</h3>
@@ -26,7 +26,7 @@
                 <div class="flex items-center">
                   <div>
                     <span
-                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i
+                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-orange-200 mr-3"><i
                         class="fas fa-fingerprint"></i></span>
                   </div>
                   <div>
@@ -71,7 +71,7 @@
     <section class="team py-12">
       <div class="container items-center mx-auto px-4 text-center">
         <h2 class="text-3xl font-semibold text-blue-900 mb-6">Notre Équipe</h2>
-        <div class="grid grid-cols-4 md:grid-cols-1 gap-6">
+        <div class="equipe grid grid-cols-4 md:grid-cols-4 gap-6">
           <TeamCard v-for="(member, index) in people" :key="index" :member="member" />
         </div>
 
@@ -98,7 +98,11 @@ export default {
           role: "Développeur Web",
           image: new URL('@/assets/Images/team.jpg', import.meta.url).href,
         },
-        
+        {
+          name: "Mouhamed Lo",
+          role: "Développeur Web",
+          image: new URL('@/assets/Images/team.jpg', import.meta.url).href,
+        },
         {
           name: "Adama Dabo",
           role: "Designer UX/UI",
@@ -130,5 +134,9 @@ export default {
   align-items: center;
   justify-content: center;
 
+}
+.equipe{
+  left: 0;
+  right: 0;
 }
 </style>

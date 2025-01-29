@@ -1,10 +1,10 @@
 <template>
-    <footer class="relative bg-blue-200 pt-8 pb-6">
+    <footer class="relative bg-orange-500 pt-8 pb-6">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap text-left lg:text-left">
           <div class="w-full lg:w-6/12 px-4">
-            <h4 class="text-3xl font-semibold text-blueGray-700">Restons en contact !</h4>
-            <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+            <h4 class="text-3xl font-semibold text-blue-700">Restons en contact !</h4>
+            <h5 class="text-lg mt-0 mb-2 text-blue-600">
               Find us on any of these platforms, we respond 1-2 business days.
             </h5>
             <div class="mt-6 lg:mb-0 mb-6">
@@ -33,51 +33,51 @@
           <div class="w-full lg:w-6/12 px-4">
             <div class="flex flex-wrap items-top mb-6">
               <div class="w-full lg:w-4/12 px-4 ml-auto">
-                <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Liens utiles</span>
+                <span class="block uppercase text-blue-500 text-sm font-semibold mb-2">Liens utiles</span>
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation?ref=njs-profile">À propos de nous</a>
+                      class="text-blue-600 hover:text-blue-800 font-semibold block pb-2 text-sm"
+                      href="#">À propos de nous</a>
                   </li>
                   <li>
                     <a
-                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                      class="text-blue-600 hover:text-blue-800 font-semibold block pb-2 text-sm"
+                      href="#">Blog</a>
                   </li>
                   <li>
                     <a
-                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                      class="text-blue-600 hover:text-blue-800 font-semibold block pb-2 text-sm"
+                      href="#">Github</a>
                   </li>
                   <li>
                     <a
-                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Produits gratuits</a>
+                      class="text-blue-600 hover:text-blue-800 font-semibold block pb-2 text-sm"
+                      href="#">Produits gratuits</a>
                   </li>
                 </ul>
               </div>
               <div class="w-full lg:w-4/12 px-4">
-                <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Autres ressources</span>
+                <span class="block uppercase text-blue-500 text-sm font-semibold mb-2">Autres ressources</span>
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
+                      class="text-blue-600 hover:text-blue-800 font-semibold block pb-2 text-sm"
+                      href="#">MIT License</a>
                   </li>
                   <li>
                     <a
-                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                      class="text-blue-600 hover:text-blue-800 font-semibold block pb-2 text-sm"
+                      href="#">Terms &amp; Conditions</a>
                   </li>
                   <li>
                     <a
-                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/privacy?ref=njs-profile">Politique de confidentialité</a>
+                      class="text-blue-600 hover:text-blue-800 font-semibold block pb-2 text-sm"
+                      href="#">Politique de confidentialité</a>
                   </li>
                   <li>
                     <a
-                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      class="text-blue-600 hover:text-blue-800 font-semibold block pb-2 text-sm"
                       href="#">Nous contacter</a>
                   </li>
                 </ul>
@@ -85,14 +85,14 @@
             </div>
           </div>
         </div>
-        <hr class="my-6 border-blueGray-300">
+        <hr class="my-6 border-blue-300">
         <div class="flex flex-wrap items-center md:justify-between justify-center">
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div class="text-sm text-blueGray-500 font-semibold py-1">
+            <div class="text-sm text-blue-500 font-semibold py-1">
               Copyright © <span id="get-current-year">2025 </span>
-              <a href="#" class="text-blueGray-500 hover:text-gray-800"
+              <a href="#" class="text-blue-500 hover:text-gray-800"
                  target="_blank">Taktyl
-                <a href="#" class="text-blueGray-500 hover:text-blueGray-800"> group</a>.
+                <a href="#" class="text-blue-500 hover:text-blue-800"> group</a>.
               </a>
             </div>
           </div>
