@@ -24,12 +24,19 @@
         <nav :class="menuOpen ? 'flex flex-col' : 'hidden'"
           class="md:flex md:flex-row md:items-center md:space-x-4 md:pb-0 pb-4">
 
-          <router-link v-for="route in routes" :key="route.name" :to="route.path" :class="[
-            'px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-orange-900 focus:text-orange-900 focus:outline-none focus:shadow-outline',
-            isActive(route.path) ? 'text-blue' : 'dark-mode:text-orange-200 dark-mode:hover:text-white'
-          ]">
-            {{ route.name.charAt(0).toUpperCase() + route.name.slice(1) }}
-          </router-link>
+          <router-link 
+  v-for="route in routes" 
+  :key="route.name" 
+  :to="route.path" 
+  :class="[
+    'px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-orange-900 focus:text-orange-900 focus:outline-none focus:shadow-outline',
+    isActive(route.path) ? 'text-blue' : 'dark-mode:text-orange-200 dark-mode:hover:text-white'
+  ]"
+  @click="menuOpen = false"
+>
+  {{ route.name.charAt(0).toUpperCase() + route.name.slice(1) }}
+</router-link>
+
         </nav>
 
 
