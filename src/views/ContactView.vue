@@ -1,6 +1,6 @@
 <template>
     <!-- Contact Page -->
-    <div class="hero bg-white py-12">
+    <div class="hero mt-20 bg-white py-12">
         <div class="container mx-auto px-4">
             <!-- Heading Section -->
             <div class="heading text-center text-blue">

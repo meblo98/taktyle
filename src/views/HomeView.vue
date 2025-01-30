@@ -1,15 +1,14 @@
 <template>
   <div>
-    <HeroSection />
+    <HeroSection
+    class="mt-20"
+    />
     <section class="solutions py-10 bg-gray-100">
       <div class="container mx-auto">
-        <h2 class="text-center text-2xl text-blue-500 font-bold mb-6">Nos Solutions</h2>
-        <div class="">
+        <h2 class="text-center text-2xl text-blue-500 font-bold mb-6">Nos Solutions</h2>       
           <SolutionsCard
-          link="/nos-solution"
+          link="/solution"
           />
-          
-        </div>
       </div>
     </section>
     <section class="testimonials py-10">
