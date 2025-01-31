@@ -60,7 +60,7 @@
                     <!-- Submit Button -->
                     <div class="mt-6 flex justify-center">
                         <button type="submit"
-                            class="px-6 py-3 text-white bg-blue rounded-lg hover:bg-white hover:text-black hover:shadow-md transition">
+                            class="px-6 py-3 text-white bg-orange rounded-lg hover:bg-white hover:text-black hover:shadow-md transition">
                             Envoyer
                         </button>
                     </div>
