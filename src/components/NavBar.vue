@@ -8,7 +8,7 @@
         <div class="flex flex-row items-center justify-between p-4">
           <a href="#"
             class="text-lg font-semibold tracking-widest text-orange-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
-            <img src="@/assets/Images/logo.jpg" alt="logo taktyl" width="30%">
+            <img src="@/assets/Images/logo.svg" alt="logo taktyl" width="50%">
           </a>
           <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="toggleMenu">
             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
