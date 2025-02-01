@@ -47,14 +47,14 @@
                     <div class="mt-6">
                         <label for="subject" class="text-lg font-medium mb-2">Objet</label>
                         <input type="text" name="subject" id="subject" placeholder="Mentionnez votre domaine d'intérêt"
-                            class="w-full px-4 py-2 rounded-lg border text-black border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+                            class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
                     </div>
 
                     <!-- Message -->
                     <div class="mt-6">
                         <label for="message" class="text-lg font-medium mb-2">Message:</label>
                         <textarea name="message" id="message" rows="5" placeholder="Rédigez votre message"
-                            class="w-full px-4 py-2 rounded-lg border border-gray-300 text-black focus:ring-2 focus:ring-blue-400 focus:outline-none"></textarea>
+                            class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none"></textarea>
                     </div>
 
                     <!-- Submit Button -->
