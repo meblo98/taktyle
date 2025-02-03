@@ -49,6 +49,14 @@ export default {
           buttonBg: "#FF6F6130", // 20% opacité
         },
         {
+          icon: "fas fa-lightbulb",
+          title: "Innovation",
+          description: "Découvrez les dernières tendances technologiques.",
+          color: "#FF6F61", // Orange
+          bgColor: "#FFF3F0", // Fond clair
+          buttonBg: "#FF6F6130", // 20% opacité
+        },
+        {
           icon: "fas fa-code",
           title: "Développement",
           description: "Explorez le monde du développement web et logiciel.",
