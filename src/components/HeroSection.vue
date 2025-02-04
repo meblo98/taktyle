@@ -36,7 +36,7 @@
       class="relative bg-[url('@/assets/Images/hero-image.jpg')] bg-cover bg-center bg-no-repeat"
     >
       <div
-        class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+        class="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
       ></div>
     
       <div
