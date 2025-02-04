@@ -5,7 +5,7 @@
     />
     <section class="solutions py-10 bg-gray-100">
       <div class="container mx-auto">
-        <h2 class="text-center text-2xl text-blue-500 font-bold mb-6">Nos Solutions</h2>       
+        <h2 class="text-center text-2xl text-blue font-bold mb-6">Nos Solutions</h2>       
           <SolutionsCard
           link="/solution"
           />
@@ -13,7 +13,7 @@
     </section>
     <section class="testimonials py-10">
       <div class="container mx-auto">
-        <h2 class="text-center text-2xl text-blue-500 font-bold mb-6">Ce Que Disent Nos Clients</h2>
+        <h2 class="text-center text-2xl text-blue font-bold mb-6">Ce Que Disent Nos Clients</h2>
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
           <TestimonialCard/>
         </div>

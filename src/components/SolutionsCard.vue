@@ -1,12 +1,8 @@
 <template>
   <div class="flex flex-wrap justify-center gap-6">
-    <div
-      v-for="(card, index) in cards"
-      :key="index"
-      class="relative w-full max-w-xs border-2 rounded-lg p-6 flex flex-col gap-4 
+    <div v-for="(card, index) in cards" :key="index" class="relative w-full max-w-xs border-2 rounded-lg p-6 flex flex-col gap-4 
              hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-      :style="{ borderColor: card.color, backgroundColor: card.bgColor }"
-    >
+      :style="{ borderColor: card.color, backgroundColor: card.bgColor }">
       <!-- Icône -->
       <i :class="card.icon" class="text-4xl" :style="{ color: card.color }"></i>
 
@@ -21,14 +17,13 @@
       </div>
 
       <!-- Bouton -->
-      <button
-        class="w-full px-4 py-2 border rounded-full flex justify-center items-center gap-2
+      <button class="w-full px-4 py-2 border rounded-full flex justify-center items-center gap-2
                hover:shadow-md transition-all duration-300"
-        :style="{ borderColor: card.color, backgroundColor: card.buttonBg, color: card.color }"
-      >
+        :style="{ borderColor: card.color, backgroundColor: card.buttonBg, color: card.color }">
         <p class="font-medium">En savoir plus</p>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
         </svg>
       </button>
     </div>
@@ -72,7 +67,7 @@ export default {
           bgColor: "#FFF3F0",
           buttonBg: "#FF6F6130",
         },
-        
+
       ],
     };
   },
