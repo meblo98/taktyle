@@ -21,7 +21,8 @@
       </div>
 
       <!-- Bouton -->
-      <button
+      <router-link
+      to="solution"
         class="w-full px-4 py-2 border rounded-full flex justify-center items-center gap-2
                hover:shadow-md transition-all duration-300"
         :style="{ borderColor: card.color, backgroundColor: card.buttonBg, color: card.color }"
@@ -31,7 +32,7 @@
           class="w-5 h-5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
         </svg>
-      </button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -69,9 +70,9 @@ export default {
           icon: "fas fa-bullhorn",
           title: "Marketing",
           description: "Stratégies innovantes pour votre entreprise.",
-          color: "#28A745", // Vert
-          bgColor: "#E6F9E6", // Fond clair
-          buttonBg: "#28A74530",
+          color: "#0056B3", // Bleu
+          bgColor: "#E0F2FF", // Fond clair
+          buttonBg: "#0056B330",
         },
       ],
     };

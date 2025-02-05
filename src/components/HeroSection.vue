@@ -43,10 +43,9 @@
         class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
       >
         <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h1 class="text-3xl text-blue font-extrabold sm:text-5xl">
-            Boostez votre entreprise avec des outils digitaux modernes
-    
-            <strong class="block font-extrabold text-orange-700">Des solutions adaptées aux PME en Afrique de l'Ouest. </strong>
+          <h1 class="text-3xl text-orange sm:text-5xl">
+            <strong class="block font-extrabold text-blue-700"> Boostez votre entreprise avec des outils digitaux modernes </strong>
+            Des solutions adaptées aux PME en Afrique de l'Ouest.
           </h1>
 
           <div class="mt-8 flex flex-wrap gap-4 text-center lg:flex-row lg:justify-center">

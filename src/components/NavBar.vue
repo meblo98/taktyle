@@ -4,7 +4,6 @@
       <div
         style="border-radius: 0px 0px 25px 25px; margin-top: 0; margin-bottom: 20px; position: fixed; top: 0; left: 0;right: 0; width: 100%;"
         class="flex navLink flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-
         <div class="flex flex-row items-center justify-between p-4">
           <a href="#"
             class="text-lg font-semibold tracking-widest text-orange-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
@@ -22,24 +21,14 @@
           </button>
         </div>
         <nav :class="menuOpen ? 'flex flex-col' : 'hidden'"
-          class="md:flex md:flex-row md:items-center md:space-x-4 md:pb-0 pb-4">
-
-          <router-link 
-  v-for="route in routes" 
-  :key="route.name" 
-  :to="route.path" 
-  :class="[
-    'px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-orange-900 focus:text-orange-900 focus:outline-none focus:shadow-outline',
-    isActive(route.path) ? 'text-blue' : 'dark-mode:text-orange-200 dark-mode:hover:text-white'
-  ]"
-  @click="menuOpen = false"
->
-  {{ route.name.charAt(0).toUpperCase() + route.name.slice(1) }}
-</router-link>
-
+          class="md:flex md:flex-row font-extrabold md:items-center md:space-x-4 md:pb-0 pb-4">
+          <router-link v-for="route in routes" :key="route.name" :to="route.path" :class="[
+            'px-4 py-2 mt-2 text-sm font-extrabold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-orange-900 focus:text-orange-900 focus:outline-none focus:shadow-outline',
+            isActive(route.path) ? 'text-blue' : 'dark-mode:text-orange-200 dark-mode:hover:text-white'
+          ]" @click="menuOpen = false">
+            {{ route.name.charAt(0).toUpperCase() + route.name.slice(1) }}
+          </router-link>
         </nav>
-
-
       </div>
     </div>
   </div>
