@@ -102,7 +102,7 @@
 				<label for="message" class="text-sm">Message</label>
 				<textarea id="message" rows="3" class="w-full p-3 rounded dark:bg-gray-100"></textarea>
 			</div>
-			<button type="submit" class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-600 dark:text-gray-50">Send Message</button>
+			<button type="submit" class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-600 dark:text-gray-50">Envoyer</button>
 		</form>
 	</div>
 </template>
