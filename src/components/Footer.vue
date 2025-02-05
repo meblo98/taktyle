@@ -1,5 +1,5 @@
 <template>
-    <footer class="relative bg-blue-300 mt-5 pt-8 pb-6">
+    <footer class="relative bg-blue-100 mt-5 pt-8 pb-6">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap text-left lg:text-left">
           <div class="w-full lg:w-6/12 px-4">
@@ -21,12 +21,12 @@
               <button
                 class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button">
-                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-linkedin"></i>
               </button>
               <button
                 class="bg-white text-orangeGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
               </button>
             </div>
           </div>
@@ -48,12 +48,12 @@
                   <li>
                     <a
                       class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
-                      href="#">Github</a>
+                      href="#">Nos Solutions</a>
                   </li>
                   <li>
                     <a
                       class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
-                      href="#">Produits gratuits</a>
+                      href="#">Notre Mission</a>
                   </li>
                 </ul>
               </div>

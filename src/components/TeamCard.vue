@@ -5,7 +5,7 @@
       <div class="flex flex-columns flex-wrap justify-center mt-8">
         <div v-for="(member, index) in teamMembers" :key="index" class="flex flex-row flex-wrap justify-center mt-8">
           <div
-            class="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-orange-500 dark:text-gray-100">
+            class="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-500 dark:text-gray-100">
             <img alt=""
               class="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
               :src="getImageUrl(member.image)" :alt="member.name">
