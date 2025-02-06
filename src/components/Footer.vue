@@ -1,5 +1,5 @@
 <template>
-    <footer class="relative bg-blue-100 mt-5 pt-8 pb-6">
+    <footer class="relativemt-5 pt-8 pb-6">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap text-left lg:text-left">
           <div class="w-full lg:w-6/12 px-4">
@@ -37,22 +37,22 @@
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
+                      class="text-white hover:text-orange-800 font-semibold block pb-2 text-sm"
                       href="#">À propos de nous</a>
                   </li>
                   <li>
                     <a
-                      class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
+                      class="text-white hover:text-orange-800 font-semibold block pb-2 text-sm"
                       href="#">Blog</a>
                   </li>
                   <li>
                     <a
-                      class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
+                      class="text-white hover:text-orange-800 font-semibold block pb-2 text-sm"
                       href="#">Nos Solutions</a>
                   </li>
                   <li>
                     <a
-                      class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
+                      class="text-white hover:text-orange-800 font-semibold block pb-2 text-sm"
                       href="#">Notre Mission</a>
                   </li>
                 </ul>
@@ -62,22 +62,22 @@
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
+                      class="text-white hover:text-orange-800 font-semibold block pb-2 text-sm"
                       href="#">MIT License</a>
                   </li>
                   <li>
                     <a
-                      class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
+                      class="text-white hover:text-orange-800 font-semibold block pb-2 text-sm"
                       href="#">Terms &amp; Conditions</a>
                   </li>
                   <li>
                     <a
-                      class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
+                      class="text-white hover:text-orange-800 font-semibold block pb-2 text-sm"
                       href="#">Politique de confidentialité</a>
                   </li>
                   <li>
                     <a
-                      class="text-orange-600 hover:text-orange-800 font-semibold block pb-2 text-sm"
+                      class="text-white hover:text-orange-800 font-semibold block pb-2 text-sm"
                       href="#">Nous contacter</a>
                   </li>
                 </ul>
@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <hr class="my-6 border-orange-300">
+        <hr class="my-6 border-white">
         <div class="flex flex-wrap items-center md:justify-between justify-center">
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
             <div class="text-sm text-orange-500 font-semibold py-1">
@@ -110,5 +110,9 @@
   <style scoped>
   @import "https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css";
   @import "https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css";
+
+  footer{
+  background-color: #2A424D;
+  }
   </style>
   

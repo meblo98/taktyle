@@ -5,7 +5,15 @@
     />
     <section class="solutions py-10 bg-gray-100">
       <div class="container mx-auto">
-        <h2 class="text-center text-2xl text-blue font-bold mb-6">Nos Solutions</h2>       
+        <div class="mb-5">
+              <h1 class="text-3xl text-center font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Nos Solutions</h1>
+
+              <div class="mt-2 text-center">
+                <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+                <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
+                <span class="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
+              </div>
+            </div>       
           <SolutionsCard
           link="/solution"
           />
@@ -13,7 +21,15 @@
     </section>
     <section class="testimonials py-10">
       <div class="container mx-auto">
-        <h2 class="text-center text-2xl text-blue font-bold mb-6">Ce Que Disent Nos Clients</h2>
+        <div class="mb-5">
+              <h1 class="text-3xl text-center font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Ce Que Disent Nos Clients</h1>
+
+              <div class="mt-2 text-center">
+                <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+                <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
+                <span class="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
+              </div>
+            </div>       
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
           <TestimonialCard/>
         </div>
