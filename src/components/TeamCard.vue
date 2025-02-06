@@ -9,7 +9,7 @@
         <!-- section header -->
         <header class="text-center mx-auto mb-12">
             <div>
-              <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white"><span class="font-light">Notre</span> équipe</h1>
+              <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Notre équipe</h1>
 
               <div class="mt-2">
                 <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>

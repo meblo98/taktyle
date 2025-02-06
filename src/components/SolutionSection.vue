@@ -198,7 +198,7 @@
         <div>
           <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
             class="rounded-t-xl" />
-          <div class="px-9 pt-10 pb-14 bg-orange-500 rounded-b-lg">
+          <div class="px-9 pt-10 pb-14 bg-green-500 rounded-b-lg">
             <div class="text-white space-y-4">
               <h3 class="text-xl font-bold lead-xl bold">Eduxel</h3>
               <div class="text-lg font-light">

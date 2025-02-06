@@ -15,15 +15,15 @@
             </div>
 				<div class="dark:text-orange-600 mt-2">
                     <div class="flex items-center mb-3">
-                        <i class="fa-solid fa-location-dot text-xl mr-2"></i>
+                        <i class="fa-solid fa-location-dot text-blue text-xl mr-2"></i>
                         <span>4 cité Cpi, VDN Dakar</span>
                     </div>
                     <div class="flex items-center mb-3">
-                        <i class="fa-solid fa-phone text-xl mr-2"></i>
+                        <i class="fa-solid fa-phone text-blue text-xl mr-2"></i>
                         <span>+221 77 123 45 67</span>
                     </div>
                     <div class="flex items-center mb-3">
-                        <i class="fa-solid fa-envelope text-xl mr-2"></i>
+                        <i class="fa-solid fa-envelope text-blue text-xl mr-2"></i>
                         <span>contact@taktylgroup.com</span>
                     </div>    
                 </div>
