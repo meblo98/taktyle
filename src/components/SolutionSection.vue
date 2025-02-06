@@ -124,7 +124,7 @@
       </div>
       <div class="flex flex-col md:px-10 md:flex-row items-center justify-center gap-6">
         <div>
-          <img src="https://cdn.pixabay.com/photo/2023/08/15/11/47/mushroom-8191823_1280.jpg" alt="Featured Image 1"
+          <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-orange-500 rounded-b-lg">
             <div class="text-white space-y-4">
@@ -158,7 +158,7 @@
           </div>
         </div>
         <div class="">
-          <img src="https://cdn.pixabay.com/photo/2023/08/15/11/47/mushroom-8191823_1280.jpg" alt="Featured Image 1"
+          <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-blue-600 rounded-b-lg">
             <div class="text-white space-y-4">
@@ -196,7 +196,7 @@
 
       <div class="flex flex-col md:px-10 md:flex-row items-center justify-center gap-6">
         <div>
-          <img src="https://cdn.pixabay.com/photo/2023/08/15/11/47/mushroom-8191823_1280.jpg" alt="Featured Image 1"
+          <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-orange-500 rounded-b-lg">
             <div class="text-white space-y-4">
@@ -230,7 +230,7 @@
           </div>
         </div>
         <div class="">
-          <img src="https://cdn.pixabay.com/photo/2023/08/15/11/47/mushroom-8191823_1280.jpg" alt="Featured Image 1"
+          <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-blue-600 rounded-b-lg">
             <div class="text-white space-y-4">

@@ -1,26 +1,34 @@
 <template>
 	<div
-    style="margin-top:15vh;"
+    style="margin-top:15vh;margin-bottom:10vh;"
     class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-orange-100 dark:text-orange-800">
 		<div class="flex flex-col justify-between">
 			<div class="space-y-2">
-				<h2 class="text-4xl font-bold leading-tight lg:text-5xl">Contactez-Nous!</h2>
+				<div class="mb-5">
+              <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Contactez-Nous !</h1>
+
+              <div class="mt-2">
+                <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+                <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
+                <span class="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
+              </div>
+            </div>
 				<div class="dark:text-orange-600 mt-2">
-                    <div class="flex items-center">
+                    <div class="flex items-center mb-3">
                         <i class="fa-solid fa-location-dot text-xl mr-2"></i>
                         <span>4 cité Cpi, VDN Dakar</span>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center mb-3">
                         <i class="fa-solid fa-phone text-xl mr-2"></i>
                         <span>+221 77 123 45 67</span>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center mb-3">
                         <i class="fa-solid fa-envelope text-xl mr-2"></i>
                         <span>contact@taktylgroup.com</span>
                     </div>    
                 </div>
 			</div>
-			<img src="@/assets/Images/contact.svg" alt="" class="p-6 h-52 md:h-64">
+			<img src="@/assets/Images/contact.png" alt="" class="p-6 h-52 md:h-64">
 		</div>
 		<form class="space-y-6">
 			<div>
