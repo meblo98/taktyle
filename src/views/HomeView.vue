@@ -37,7 +37,7 @@
     </section>
     <section class="cta text-center bg-white text-blue-500 py-10">
       <h2 class="text-2xl font-bold mb-5">Prêt à booster votre entreprise ?</h2>
-      <router-link to="/contact" class="bg-blue-500 text-white py-4 px-12 rounded-full hover:bg-orange-600">Contactez-nous</router-link>
+      <router-link to="/contact" class="bg-blue-500 text-white py-3 px-4 rounded-full hover:bg-orange-600">Contactez-nous</router-link>
     </section>
     <section>
       <Partener/>
