@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import 'vue3-carousel/carousel.css';
 import { ref } from 'vue';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
@@ -92,4 +92,90 @@ const carouselConfig = {
   margin-top: 1rem;
   color: rgba(107, 114, 128, 1);
 }
+</style> -->
+
+<template>
+  <div class="relative w-full flex overflow-hidden shadow-2xl">
+    <!-- Compteur -->
+    <div class="absolute top-5 right-5 bg-gray-600 text-white text-sm px-2 rounded-full z-10">
+      {{ currentIndex + 1 }} / {{ images.length }}
+    </div>
+
+    <!-- Images et captions -->
+    <div class="relative w-full h-96">
+      <img
+        :src="images[currentIndex].src"
+        alt="Image"
+        class="absolute inset-0 h-full w-full object-cover opacity-70 transition-opacity duration-500"
+      />
+      <figcaption
+        class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center bg-gray-300 bg-opacity-25"
+      >
+        {{ images[currentIndex].caption }}
+      </figcaption>
+    </div>
+
+    <!-- Bouton précédent -->
+    <button @click="prevImage"
+      class="absolute left-5 top-1/2 transform -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
+      <svg class="w-8 h-8 text-gray-500 hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+
+    <!-- Bouton suivant -->
+    <button @click="nextImage"
+      class="absolute right-5 top-1/2 transform -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
+      <svg class="w-8 h-8 text-gray-500 hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</template>
+
+<script setup>
+import { ref, onMounted, onUnmounted } from "vue";
+
+// Importation des images localement
+import img1 from "@/assets/Images/hero-image0.jpg";
+import img2 from "@/assets/Images/hero-image0.jpg";
+import img3 from "@/assets/Images/hero-image0.jpg";
+import img4 from "@/assets/Images/hero-image0.jpg";
+import img5 from "@/assets/Images/hero-image0.jpg";
+
+// Liste des images avec leurs légendes
+const images = ref([
+  { src: img1, caption: "Plage ensoleillée uiçh ) içgzd ihhà ihdb ) bus ji$ nhda qe  qnih dioenpqbfgl 🌞" },
+  { src: img2, caption: "Un chat curieux 🐱" },
+  { src: img3, caption: "Un chien fidèle 🐶" },
+  { src: img4, caption: "Un magnifique paysage lore 🌄" },
+  { src: img5, caption: "Textures et motifs artistiques 🎨" }
+]);
+
+const currentIndex = ref(0);
+let interval = null;
+
+// Fonction pour aller à l'image précédente
+const prevImage = () => {
+  currentIndex.value = currentIndex.value > 0 ? currentIndex.value - 1 : images.value.length - 1;
+};
+
+// Fonction pour aller à l'image suivante
+const nextImage = () => {
+  currentIndex.value = (currentIndex.value + 1) % images.value.length;
+};
+
+// Défilement automatique toutes les 3 secondes
+onMounted(() => {
+  interval = setInterval(nextImage, 3000);
+});
+
+// Nettoyage du timer quand le composant est détruit
+onUnmounted(() => {
+  clearInterval(interval);
+});
+</script>
+
+<style scoped>
+/* Ajoutez vos styles ici si nécessaire */
 </style>
