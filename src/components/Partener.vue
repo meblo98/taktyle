@@ -3,8 +3,9 @@
       <div class="container">
         <div class="row">
           <div class="mb-5">
-            <h1 class="text-3xl text-center font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Nos Partenaires</h1>
-  
+            <h1 class="text-3xl text-center font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
+              Nos Partenaires
+            </h1>
             <div class="mt-2 text-center">
               <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
               <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
@@ -44,6 +45,14 @@
   import "swiper/css/pagination";
   import "swiper/css/navigation";
   
+  // Import des images
+  import image1 from "@/assets/Images/images.png";
+  import image2 from "@/assets/Images/images.png";
+  import image3 from "@/assets/Images/images.png";
+  import image4 from "@/assets/Images/images.png";
+  import image5 from "@/assets/Images/images.png";
+  import image6 from "@/assets/Images/images.png";
+  
   export default {
     components: {
       Swiper,
@@ -51,14 +60,7 @@
     },
     data() {
       return {
-        logos: [
-          "/src/assets/Images/images.png",
-          "/src/assets/Images/images.png",
-          "/src/assets/Images/images.png",
-          "/src/assets/Images/images.png",
-          "/src/assets/Images/images.png",
-          "/src/assets/Images/images.png",       
-        ],
+        logos: [image1, image2, image3, image4, image5, image6],
       };
     },
     setup() {
@@ -90,3 +92,4 @@
     text-align: center;
   }
   </style>
+  
