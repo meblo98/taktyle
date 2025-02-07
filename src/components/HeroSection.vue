@@ -15,14 +15,14 @@
           <div class="mt-8 flex flex-wrap gap-4 text-center lg:flex-row lg:justify-center">
             <div class="button1">
               <router-link to="/solution"
-                class="block w-full rounded-full rounded-sm bg-blue-600 px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:ring-3 focus:outline-hidden sm:w-auto">
+                class="block w-full rounded-full rounded-sm bg-orange-600 px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:ring-3 focus:outline-hidden sm:w-auto">
                 Découvrez nos solutions
               </router-link>
             </div>
 
             <div class="button1">
               <router-link to="/contact"
-                class="block w-full rounded-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow-sm hover:text-rose-700 focus:ring-3 focus:outline-hidden sm:w-auto">
+                class="block w-full rounded-full rounded-sm bg-blue px-12 py-3 text-sm font-medium text-white shadow-sm hover:text-orange focus:ring-3 focus:outline-hidden sm:w-auto">
                 Contactez-nous
               </router-link>
             </div>

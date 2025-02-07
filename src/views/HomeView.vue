@@ -39,6 +39,9 @@
       <h2 class="text-2xl font-bold mb-5">Prêt à booster votre entreprise ?</h2>
       <router-link to="/contact" class="bg-blue-500 text-white py-4 px-12 rounded-full hover:bg-orange-600">Contactez-nous</router-link>
     </section>
+    <section>
+      <Partener/>
+    </section>
   </div>
 </template>
 
@@ -46,12 +49,14 @@
 import HeroSection from '@/components/HeroSection.vue';
 import SolutionsCard from '@/components/SolutionsCard.vue';
 import TestimonialCard from '@/components/TestimonialCard.vue';
+import Partener from '@/components/Partener.vue';
 
 export default {
   components: {
     HeroSection,
     SolutionsCard,
     TestimonialCard,
+    Partener,
   },
 };
 </script>
