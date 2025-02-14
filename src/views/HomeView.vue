@@ -1,4 +1,6 @@
 <template>
+       <NavBar />
+
   <div>
     <HeroSection
     class="mt-20"
@@ -43,6 +45,8 @@
       <Partener/>
     </section>
   </div>
+  <Footer/>
+
 </template>
 
 <script>
@@ -50,6 +54,8 @@ import HeroSection from '@/components/HeroSection.vue';
 import SolutionsCard from '@/components/SolutionsCard.vue';
 import TestimonialCard from '@/components/TestimonialCard.vue';
 import Partener from '@/components/Partener.vue';
+import NavBar from '@/components/NavBar.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   components: {
@@ -57,6 +63,8 @@ export default {
     SolutionsCard,
     TestimonialCard,
     Partener,
+    NavBar,
+    Footer,
   },
 };
 </script>

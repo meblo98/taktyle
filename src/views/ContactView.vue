@@ -1,4 +1,6 @@
 <template>
+	     <NavBar />
+
 	<div
     style="margin-top:15vh;margin-bottom:10vh;"
     class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-orange-100 dark:text-orange-800">
@@ -50,4 +52,17 @@
 			<button type="submit" class="w-full p-3 text-sm font-bold tracking-wide bg-blue uppercase rounded dark:bg-white text-white rounded-full rounded-sm dark:text-white-50">Envoyer</button>
 		</form>
 	</div>
+	<Footer/>
+
 </template>
+
+<script>
+	  import NavBar from '@/components/NavBar.vue';
+	  import Footer from '@/components/Footer.vue';
+	  export default {
+  components: {
+    NavBar,
+    Footer,
+  }
+};
+</script>

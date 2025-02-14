@@ -1,4 +1,6 @@
 <template>
+       <NavBar />
+
   <div>
     <!-- Section Notre Mission -->
 
@@ -67,7 +69,7 @@
         <div class="lg:flex lg:items-center">
           <div class="w-full space-y-12 lg:w-1/2 ">
             <div>
-              <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Nos Valeurs</h1>
+              <h1 class="text-3xl font-semibold text-gray-800 text-center capitalize lg:text-4xl dark:text-white">Nos Valeurs</h1>
 
               <div class="mt-2">
                 <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
@@ -139,15 +141,21 @@
 
 
   </div>
+  <Footer/>
+
 </template>
 
 <script>
 import TeamCard from '@/components/TeamCard.vue'; // Importer le composant
+import NavBar from '@/components/NavBar.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'AboutPage',
   components: {
-    TeamCard // Déclarer le composant
+    TeamCard,
+    NavBar,
+    Footer,
   },
 
 };
