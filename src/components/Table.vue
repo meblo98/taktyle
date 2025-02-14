@@ -7,9 +7,9 @@
 
     <!-- Formulaire et tableau -->
     <div class="flex flex-col mx-3 mt-6 lg:flex-row">
-      <!-- Formulaire d'ajout de poste -->
+      <!-- Formulaire d'ajout et de modification de poste -->
       <div class="w-full lg:w-1/3 m-1">
-        <form @submit.prevent="addPost" class="w-full bg-white shadow-md p-6">
+        <form @submit.prevent="savePost" class="w-full bg-white shadow-md p-6">
           <div class="flex flex-wrap -mx-3 mb-6">
             <!-- Champ Titre -->
             <div class="w-full md:w-full px-3 mb-6">
@@ -19,7 +19,6 @@
                 class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none focus:border-[#98c01d]"
                 type="text" id="post-title" placeholder="Titre du poste" required />
               <p v-if="errors.title" class="text-red-600 text-sm">{{ errors.title[0] }}</p>
-
             </div>
 
             <!-- Champ Description -->
@@ -30,14 +29,13 @@
                 class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none focus:border-[#98c01d]"
                 id="post-description" placeholder="Description du poste" required></textarea>
               <p v-if="errors.description" class="text-red-600 text-sm">{{ errors.description[0] }}</p>
-
             </div>
 
-            <!-- Bouton Ajouter -->
+            <!-- Bouton Ajouter / Modifier -->
             <div class="w-full md:w-full px-3 mb-6">
               <button type="submit"
                 class="appearance-none block w-full bg-green-700 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-green-600 focus:outline-none focus:bg-white focus:border-gray-500">
-                Ajouter un poste
+                {{ isEditing ? 'Modifier le poste' : 'Ajouter un poste' }}
               </button>
             </div>
 
@@ -99,11 +97,11 @@
                   <div class="flex justify-center">
                     <button @click="editPost(index)"
                       class="rounded-md hover:bg-green-100 text-green-600 p-2 flex justify-between items-center">
-                      <span>Edit</span>
+                      <span>Modifier</span>
                     </button>
                     <button @click="deletePost(index)"
                       class="rounded-md hover:bg-red-100 text-red-600 p-2 flex justify-between items-center">
-                      <span>Delete</span>
+                      <span>Supprimer</span>
                     </button>
                   </div>
                 </td>
@@ -120,7 +118,6 @@
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
-
 export default {
   data() {
     return {
@@ -131,6 +128,8 @@ export default {
       },
       posts: [],
       errors: {}, // Stocker les erreurs ici
+      isEditing: false, // Détermine si on est en mode édition ou ajout
+      currentPostId: null, // ID du post en cours de modification
     };
   },
 
@@ -141,8 +140,7 @@ export default {
     // Récupérer les posts depuis le backend
     async fetchPosts() {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/posts', {
-        });
+        const response = await axios.get('http://127.0.0.1:8000/api/posts');
         this.posts = response.data;
       } catch (error) {
         console.error("Erreur lors de la récupération des postes :", error);
@@ -154,12 +152,11 @@ export default {
       this.newPost.image = event.target.files[0]; // Stocker directement le fichier
     },
 
-
-    // Ajouter un poste avec le token
-    async addPost() {
+    // Ajouter ou modifier un poste
+    async savePost() {
       const token = localStorage.getItem('token');
       if (!token) {
-        Swal.fire("Erreur", "Vous devez être connecté pour ajouter un poste.", "error");
+        Swal.fire("Erreur", "Vous devez être connecté pour ajouter ou modifier un poste.", "error");
         return;
       }
 
@@ -171,33 +168,60 @@ export default {
           formData.append('image', this.newPost.image); // Ajout correct du fichier
         }
 
-        const response = await axios.post('http://127.0.0.1:8000/api/posts', formData, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-            'Content-Type': 'multipart/form-data',
-          },
-        });
+        let response;
+        if (this.isEditing) {
+          // Modifier le poste
+          response = await axios.put(`http://127.0.0.1:8000/api/posts/${this.currentPostId}`, formData, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              'Content-Type': 'multipart/form-data',
+            },
+          });
+          // Mettre à jour l'affichage des postes
+          const index = this.posts.findIndex(post => post.id === this.currentPostId);
+          this.posts[index] = response.data;
+        } else {
+          // Ajouter un nouveau poste
+          response = await axios.post('http://127.0.0.1:8000/api/posts', formData, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              'Content-Type': 'multipart/form-data',
+            },
+          });
+          this.posts.push(response.data); // Ajouter le post à la liste
+        }
 
-        this.posts.push(response.data); // Ajouter le post à la liste
         this.newPost = { title: '', description: '', image: null }; // Réinitialiser le formulaire
+        this.isEditing = false; // Réinitialiser le mode édition
+        this.currentPostId = null; // Réinitialiser l'ID du post en cours de modification
+
         Swal.fire({
           icon: "success",
-          title: "Succès",
-          text: "Poste ajouté avec succès !",
+          title: this.isEditing ? "Poste modifié" : "Poste ajouté",
+          text: this.isEditing ? "Le poste a été modifié avec succès." : "Le poste a été ajouté avec succès.",
           timer: 2000,
           showConfirmButton: false
         });
         this.errors = {}; // Réinitialiser les erreurs après succès
       } catch (error) {
-        Swal.fire("Erreur", "Une erreur s'est produite lors de l'ajout du poste.", "error");
+        Swal.fire("Erreur", "Une erreur s'est produite lors de l'ajout ou de la modification du poste.", "error");
         if (error.response && error.response.status === 422) {
           this.errors = error.response.data.errors; // Stocker les erreurs de validation
         } else {
-          console.error("Erreur lors de l'ajout du poste :", error);
+          console.error("Erreur lors de l'ajout ou de la modification du poste :", error);
         }
       }
     },
 
+    // Modifier un poste
+    editPost(index) {
+      const post = this.posts[index];
+      this.newPost.title = post.title;
+      this.newPost.description = post.description;
+      this.newPost.image = null; // Ne pas changer l'image
+      this.isEditing = true;
+      this.currentPostId = post.id;
+    },
 
     // Supprimer un poste
     async deletePost(index) {
@@ -205,31 +229,32 @@ export default {
       const postId = this.posts[index].id;
 
       Swal.fire({
-        title: "Êtes-vous sûr?",
-        text: "Vous ne pourrez pas revenir en arrière !",
+        title: "Êtes-vous sûr ?",
+        text: "Voulez-vous vraiment supprimer ce poste ?",
         icon: "warning",
         showCancelButton: true,
-        confirmButtonColor: "#d33",
-        cancelButtonColor: "#3085d6",
-        confirmButtonText: "Oui, supprimer !"
+        confirmButtonText: "Oui",
+        cancelButtonText: "Annuler",
       }).then(async (result) => {
         if (result.isConfirmed) {
           try {
             await axios.delete(`http://127.0.0.1:8000/api/posts/${postId}`, {
-              headers: { Authorization: `Bearer ${token}` },
+              headers: {
+                Authorization: `Bearer ${token}`,
+              },
             });
-
-            this.posts.splice(index, 1);
-
-            Swal.fire("Supprimé !", "Le poste a été supprimé.", "success");
+            this.posts.splice(index, 1); // Retirer le poste de la liste
+            Swal.fire("Succès", "Le poste a été supprimé avec succès.", "success");
           } catch (error) {
-            console.error("Erreur lors de la suppression du poste :", error);
-            Swal.fire("Erreur", "Une erreur est survenue lors de la suppression.", "error");
+            Swal.fire("Erreur", "Une erreur s'est produite lors de la suppression du poste.", "error");
           }
         }
       });
     },
-
-  },
+  }
 };
 </script>
+
+<style scoped>
+/* Personnalisez votre style ici si nécessaire */
+</style>

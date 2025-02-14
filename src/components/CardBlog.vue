@@ -8,22 +8,24 @@
 				<img alt="Auteur" src="@/assets/Images/hero-image.jpg"
 					class="object-cover w-12 h-12 rounded-full shadow dark:bg-gray-500">
 				<div class="flex flex-col space-y-1">
-					<a rel="noopener noreferrer" href="#" class="text-sm font-semibold">Leroy Jenkins</a>
-					<span class="text-xs dark:text-gray-600">4 hours ago</span>
+					<a rel="noopener noreferrer" href="#" class="text-sm font-semibold">Keba DIARRA</a>
+					<!-- <span class="text-xs dark:text-gray-600">4 hours ago</span> -->
 				</div>
 			</div>
 
 			<!-- Section Contenu du Blog -->
 			<div>
 				<!-- Image dynamique -->
-				<img :src=" 'http://127.0.0.1:8000/storage//' + blog.image || '../src/assets/Images/hero-image.jpg'" alt="Image du blog"
-					class="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500">
-
+				<router-link :to="'/blog/' + blog.id">
+					<img :src="'http://127.0.0.1:8000/storage//' + blog.image || '@/assets/Images/hero-image.jpg'"
+						alt="Image du blog" class="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500">
+				</router-link>
 				<!-- Titre dynamique -->
-				<h2 class="mb-1 text-xl font-semibold">{{ blog.title }}</h2>
-
+				<router-link :to="'/blog/' + blog.id">
+					<h2 class="mb-1 text-xl font-semibold">{{ blog.title }}</h2>
+				</router-link>
 				<!-- Description dynamique -->
-				<p class="text-sm dark:text-gray-600">{{ blog.description }}</p>
+				<p class="text-sm dark:text-gray-600">{{ truncateDescription(blog.description) }}</p>
 			</div>
 
 			<!-- Section Actions (statique) -->
@@ -81,23 +83,32 @@
 import axios from 'axios';
 
 export default {
-  data() {
-    return {
-      // Déclaration d'une variable pour stocker les blogs récupérés depuis l'API
-      blogs: [],
-    };
-  },
-  mounted() {
-    // Effectuer la requête Axios au moment du montage du composant
-    axios.get('http://127.0.0.1:8000/api/posts') 
-      .then(response => {
-        // Mettre à jour les blogs avec la réponse de l'API
-        this.blogs = response.data;
-      })
-      .catch(error => {
-        console.error('Erreur lors de la récupération des blogs:', error);
-      });
-  },
+	data() {
+		return {
+			// Déclaration d'une variable pour stocker les blogs récupérés depuis l'API
+			blogs: [],
+		};
+	},
+	mounted() {
+		// Effectuer la requête Axios au moment du montage du composant
+		axios.get('http://127.0.0.1:8000/api/posts')
+			.then(response => {
+				// Mettre à jour les blogs avec la réponse de l'API
+				this.blogs = response.data;
+			})
+			.catch(error => {
+				console.error('Erreur lors de la récupération des blogs:', error);
+			});
+	},
+	methods: {
+		// Méthode pour tronquer la description à une longueur maximale
+		truncateDescription(description, maxLength = 100) {
+			if (description.length > maxLength) {
+				return description.substring(0, maxLength) + '...'; // Ajouter des points de suspension
+			}
+			return description;
+		},
+	},
 };
 </script>
 
