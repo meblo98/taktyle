@@ -1,113 +1,4 @@
    <template>
-    <!-- <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-
-          <div>
-            <img src="@/assets/Images/yooko.webp" class="rounded" alt="" />
-          </div>
-
-
-          <div>
-            <div class="max-w-lg md:max-w-none">
-              <h2 class="text-2xl font-semibold text-blue sm:text-3xl">
-                Yokoo
-              </h2>
-
-              <p class="mt-4 text-orange-700">
-                Simplifiez votre gestion quotidienne avec Yokoo !
-                Gestion des stocks, facturation, paiements et relances automatisés en un seul outil. Dites adieu aux
-                erreurs et gagnez du temps pour vous concentrer sur la croissance de votre entreprise. La solution
-                tout-en-un pour les PME dynamiques !
-              </p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-
-
-
-          <div>
-            <div class="max-w-lg md:max-w-none">
-              <h2 class="text-2xl font-semibold text-blue sm:text-3xl">
-                NAFABI
-
-              </h2>
-
-              <p class="mt-4 text-orange-700">
-                "Prenez le contrôle de vos finances avec NAFABI !
-                Facturation, gestion des dépenses, paie et bien plus encore. Une solution intuitive et puissante pour
-                une gestion financière transparente et efficace. Votre partenaire pour une santé financière optimale !
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <img src="@/assets/Images/nafabi.webp" class="rounded" alt="" />
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-
-          <div>
-            <img src="@/assets/Images/hero-image0.jpg" class="rounded" alt="" />
-          </div>
-
-
-          <div>
-            <div class="max-w-lg md:max-w-none">
-              <h2 class="text-2xl font-semibold text-blue sm:text-3xl">
-                Eduxel
-              </h2>
-
-              <p class="mt-4 text-orange-700">
-                Transformez la gestion de votre établissement scolaire avec Eduxel !
-                Gestion académique, financière et administrative simplifiée. Offrez à votre école les outils modernes
-                pour une administration fluide et une meilleure expérience éducative. L'innovation au service de
-                l'éducation !
-              </p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-          <div>
-            <div class="max-w-lg md:max-w-none">
-              <h2 class="text-2xl font-semibold text-blue sm:text-3xl">
-                Leadiz
-              </h2>
-
-              <p class="mt-4 text-orange-700">
-                Boostez vos ventes avec Leadiz !
-                Prospection, gestion de la relation client (PreCRM et CRM) et suivi des opportunités. Maximisez vos
-                conversions et fidélisez vos clients grâce à une solution adaptée aux PME ambitieuses. Votre allié pour
-                une croissance durable !
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <img src="@/assets/Images/leadeiz.webp" class="rounded" alt="" />
-          </div>
-
-        </div>
-      </div>
-    </section> -->
 
     <!-- component -->
     <div class="flex flex-col bg-white py-4 px-12">
@@ -130,10 +21,17 @@
             <div class="text-white space-y-4">
               <h3 class="text-xl font-bold lead-xl bold">Yokoo</h3>
               <div class="text-lg font-light">
-                Simplifiez votre gestion quotidienne avec Yokoo !
-                Gestion des stocks, facturation, paiements et relances automatisés en un seul outil. Dites adieu aux
-                erreurs et gagnez du temps pour vous concentrer sur la croissance de votre entreprise. La solution
-                tout-en-un pour les PME dynamiques !
+               📌 Yokoo : La solution digitale pour les commerçants et PME
+                Yokoo est l’outil indispensable pour les commerçants et entrepreneurs souhaitant une gestion fluide et efficace de leur activité. Pensé pour les réalités du marché africain, il offre une interface simple et intuitive adaptée aux besoins des entreprises locales.
+                <br/>✅ Avec Yokoo, vous pouvez :
+                <br/>✔ Facturer rapidement vos clients avec des modèles professionnels.
+                <br/>✔ Suivre les paiements et automatiser les relances des factures impayées.
+                <br/>✔ Gérer vos dépenses et organiser votre trésorerie en toute simplicité.
+                <br/>✔ Piloter votre stock pour éviter les ruptures et optimiser votre approvisionnement.
+                <br/>✔ Assurer la comptabilisation automatique de vos opérations, sans effort.
+                <br/>💡 Adoptez Yokoo et digitalisez votre gestion commerciale dès aujourd’hui !
+                <!-- [Essayez Yokoo →] -->
+
               </div>
             </div>
             <!-- <div class="flex justify-between pt-8">

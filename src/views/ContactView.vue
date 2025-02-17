@@ -2,7 +2,7 @@
 	     <NavBar />
 
 	<div
-    style="margin-top:15vh;margin-bottom:10vh;"
+    style="margin-top:15vh;margin-bottom:10vh; background-color: #A7BDBF;"
     class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-orange-100 dark:text-orange-800">
 		<div class="flex flex-col justify-between">
 			<div class="space-y-2">
@@ -30,7 +30,7 @@
                     </div>    
                 </div>
 			</div>
-			<img src="@/assets/Images/contact.png" alt="" class="p-6 h-52 md:h-64">
+			<img src="@/assets/Images/image page contact.png" alt="" class="p-6 h-52 md:h-64">
 		</div>
 		<form class="space-y-6">
 			<div>
