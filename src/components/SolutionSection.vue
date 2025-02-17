@@ -4,7 +4,7 @@
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
 
           <div>
-            <img src="@/assets/Images/hero-image0.jpg" class="rounded" alt="" />
+            <img src="@/assets/Images/yooko.webp" class="rounded" alt="" />
           </div>
 
 
@@ -49,7 +49,7 @@
           </div>
 
           <div>
-            <img src="@/assets/Images/hero-image0.jpg" class="rounded" alt="" />
+            <img src="@/assets/Images/nafabi.webp" class="rounded" alt="" />
           </div>
 
         </div>
@@ -102,7 +102,7 @@
           </div>
 
           <div>
-            <img src="@/assets/Images/hero-image0.jpg" class="rounded" alt="" />
+            <img src="@/assets/Images/leadeiz.webp" class="rounded" alt="" />
           </div>
 
         </div>
@@ -124,7 +124,7 @@
       </div>
       <div class="flex flex-col md:px-10 md:flex-row items-center justify-center gap-6">
         <div>
-          <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
+          <img src="@/assets/Images/yooko.webp" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-orange-500 rounded-b-lg">
             <div class="text-white space-y-4">
@@ -158,7 +158,7 @@
           </div>
         </div>
         <div class="">
-          <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
+          <img src="@/assets/Images/nafabi.webp" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-blue-600 rounded-b-lg">
             <div class="text-white space-y-4">
@@ -196,7 +196,7 @@
 
       <div class="flex flex-col md:px-10 md:flex-row items-center justify-center gap-6">
         <div>
-          <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
+          <img src="@/assets/Images/yooko.webp" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-green-500 rounded-b-lg">
             <div class="text-white space-y-4">
@@ -230,7 +230,7 @@
           </div>
         </div>
         <div class="">
-          <img src="@/assets/Images/solution.jpg" alt="Featured Image 1"
+          <img src="@/assets/Images/leadeiz.webp" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-blue-600 rounded-b-lg">
             <div class="text-white space-y-4">
