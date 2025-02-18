@@ -13,19 +13,7 @@
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
   </p>
 </a>
-<a href="#" class="block mx-3">
-  <img
-    alt=""
-    src="@/assets/Images/image leadiz accueil.jpg"
-    class="h-64 w-full object-cover sm:h-80 lg:h-96"
-  />
 
-  <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Leadiz.</h3>
-
-  <p class="mt-2 max-w-sm text-gray-700">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
-  </p>
-</a>
 <a href="#" class="block mx-3">
   <img
     alt=""
@@ -47,6 +35,20 @@
   />
 
   <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Yokoo</h3>
+
+  <p class="mt-2 max-w-sm text-gray-700">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+  </p>
+</a>
+
+<a href="#" class="block mx-3">
+  <img
+    alt=""
+    src="@/assets/Images/image leadiz accueil.jpg"
+    class="h-64 w-full object-cover sm:h-80 lg:h-96"
+  />
+
+  <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Leadiz.</h3>
 
   <p class="mt-2 max-w-sm text-gray-700">
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.

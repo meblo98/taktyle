@@ -1,181 +1,402 @@
-<!-- <script setup>
-import 'vue3-carousel/carousel.css';
-import { ref } from 'vue';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-
-const cards = ref([
-  { id: 1, name: "John Doe", message: "Lorem ipsum dolor sit amet..." },
-  { id: 2, name: "Jane Doe", message: "Deserunt voluptatem alias..." },
-  { id: 3, name: "Alice Brown", message: "Sapiente repellendus..." },
-  { id: 4, name: "Bob Smith", message: "Dolores quasi excepturi..." },
-  { id: 5, name: "Charlie Johnson", message: "Voluptatibus doloremque..." },
-]);
-
-const carouselConfig = {
-  wrapAround: true,
-  breakpoints: {
-    0: { itemsToShow: 1 }, // Mobile
-    600: { itemsToShow: 2 }, // Tablette
-    1024: { itemsToShow: 3 }, // Desktop
-  },
-};
-</script>
-
 <template>
-  <Carousel v-bind="carouselConfig">
-    <Slide v-for="card in cards" :key="card.id">
-      <div class="card mb-9">
-        <div class="header">
-          <div class="image"></div>
-          <div>
-            <div class="stars">
-              <svg v-for="n in 5" :key="n" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                </path>
-              </svg>
+   <section class="section">
+    <div class="section-wrapper">
+      <header class="header">
+        <hgroup class="hgroup">
+          <h2 class="headline">Meet Our Team!</h2>
+          <p class="tagline">Creative minds shaping the future</p>
+        </hgroup>
+        <a href="#" class="section-link"> View All </a>
+      </header>
+      <!-- nth-siblings = Total cards count - 1; update this whenever you add/remove a card  -->
+      <ul class="cards" style="--nth-siblings: 5">
+        <li class="card" style="--nth-child: 1">
+          <a href="#" class="avatar-link-wrapper">
+            <div class="visual">
+              <img class="avatar-img"
+                src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-1.avif"
+                width="144" height="144" alt="Ethan B., DevOps Engineer" />
             </div>
-            <p class="name">{{ card.name }}</p>
-          </div>
-        </div>
-        <p class="message">{{ card.message }}</p>
-      </div>
-    </Slide>
-
-    <template #addons>
-      <Navigation />
-      <Pagination />
-    </template>
-  </Carousel>
+            <div class="tooltiptext">
+              <h3 class="team-name">Ethan B.</h3>
+              <div class="team-content-wrapper">
+                <p class="team-title">DevOps Engineer</p>
+                <p class="team-bio">
+                  Master of servers, pipelines, and keeping things running
+                  smoothly.
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="card" style="--nth-child: 2">
+          <a href="#" class="avatar-link-wrapper">
+            <div class="visual">
+              <img class="avatar-img"
+                src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-2.avif"
+                width="144" height="144" alt="Ava L., UI/UX Designer" />
+            </div>
+            <div class="tooltiptext">
+              <h3 class="team-name">Ava L.</h3>
+              <div class="team-content-wrapper">
+                <p class="team-title">UI/UX Designer</p>
+                <p class="team-bio">
+                  Turning ideas into stunning designs, one pixel at a time.
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="card" style="--nth-child: 3">
+          <a href="#" class="avatar-link-wrapper">
+            <div class="visual">
+              <img class="avatar-img"
+                src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-3.avif"
+                width="144" height="144" alt="Liam J., Mobile Developer" />
+            </div>
+            <div class="tooltiptext">
+              <h3 class="team-name">Liam J.</h3>
+              <div class="team-content-wrapper">
+                <p class="team-title">Mobile Developer</p>
+                <p class="team-bio">
+                  Crafting sleek, intuitive apps for users on the go.
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="card" style="--nth-child: 4">
+          <a href="#" class="avatar-link-wrapper">
+            <div class="visual">
+              <img class="avatar-img"
+                src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-4.avif"
+                width="144" height="144" alt="Sophia K., Data Scientist" />
+            </div>
+            <div class="tooltiptext">
+              <h3 class="team-name">Sophia K.</h3>
+              <div class="team-content-wrapper">
+                <p class="team-title">Data Scientist</p>
+                <p class="team-bio">
+                  Decoding patterns and finding insights in the chaos.
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="card" style="--nth-child: 5">
+          <a href="#" class="avatar-link-wrapper">
+            <div class="visual">
+              <img class="avatar-img"
+                src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-5.avif"
+                width="144" height="144" alt="Codey X, AI Code Assistant" />
+            </div>
+            <div class="tooltiptext">
+              <h3 class="team-name">Codey X</h3>
+              <div class="team-content-wrapper">
+                <p class="team-title">AI Code Assistant</p>
+                <p class="team-bio">
+                  Powered by algorithms, driven by collaboration.
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="card" style="--nth-child: 6">
+          <a href="#" class="avatar-link-wrapper">
+            <div class="visual">
+              <img class="avatar-img"
+                src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-6.avif"
+                width="144" height="144" alt="Maya R., Project Manager" />
+            </div>
+            <div class="tooltiptext">
+              <h3 class="team-name">Maya R.</h3>
+              <div class="team-content-wrapper">
+                <p class="team-title">Project Manager</p>
+                <p class="team-bio">
+                  Keeping the team in sync and deadlines on track.
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
 
-<style scoped>
-.card {
-  background-color: rgba(243, 244, 246, 1);
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
-  text-align: center;
+
+<style lang="scss">
+  @layer reset, base, utilities, components, layout, overrides;
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+@property --direction {
+  syntax: '<number>';
+  initial-value: 1;
+  inherits: true;
 }
 
-.image {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  background-color: royalblue;
+@layer reset {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  :where(:not(dialog)) {
+    margin: 0;
+  }
+
+  :where(html) {
+    -webkit-text-size-adjust: none;
+
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+  }
+
+  :where(body) {
+    min-block-size: 100svb;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
-.stars {
-  display: flex;
-  gap: 0.125rem;
-  color: rgba(34, 197, 94, 1);
+@layer base {
+  html {
+    --surface-1: oklch(20% 0.03 269);
+    --surface-2: oklch(26% 0.04 269);
+    --text-1: oklch(91% 0.03 61);
+    --body: 400 1rem/1.5rem system-ui, sans-serif;
+    --display: 400 3.562rem/4rem system-ui, sans-serif;
+    --display-small: 400 2.25rem/2.75rem system-ui, sans-serif;
+    --label: 500 0.875rem/1.25rem system-ui, sans-serif;
+    --title: 400 1.375rem/1.75rem system-ui, sans-serif;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--surface-1);
+    color: var(--text-1);
+    font: var(--body);
+  }
 }
 
-.stars svg {
-  height: 1rem;
-  width: 1rem;
+@layer layout {
+  .section {
+    display: grid;
+    max-inline-size: 100%;
+    min-block-size: 100svb;
+    overflow-x: clip;
+    padding-block: 80px;
+    place-items: center;
+  }
+
+  .section-wrapper {
+    display: grid;
+    place-items: center;
+  }
+
+  .header {
+    display: grid;
+    place-items: center;
+    gap: 16px;
+    z-index: 2;
+
+    /* lg-n-above */
+    @media (width >=1024px) {
+      /* Placing header and cards in the same grid cell to stack them */
+      /* Both elements use grid-area: 1/1 to overlap within the same area */
+      grid-area: 1/1;
+    }
+  }
+
+  .hgroup {
+    display: grid;
+    place-items: center;
+    gap: 8px;
+  }
+
+  .headline {
+    font: var(--display-small);
+
+    /* lg-n-above */
+    @media (width >=1200px) {
+      font: var(--display);
+    }
+  }
+
+  .section-link {
+    color: var(--text-1);
+    text-decoration: underline;
+    font: var(--label);
+
+    /* lg-n-below */
+    @media (width < 1024px) {
+      display: none;
+    }
+  }
+
+  .cards {
+    list-style: none;
+    padding: 0;
+
+    /* lg-n-below */
+    @media (width < 1024px) {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 32px;
+      max-inline-size: 100%;
+      overflow-x: scroll;
+      padding-block: 32px;
+      padding-inline: 32px;
+    }
+
+    /* lg-n-above */
+    @media (width >=1024px) {
+      --avatar-opacity: 1;
+      --avatar-img-scale: 1;
+      --tooltip-visibility: hidden;
+      --tooltip-opacity: 0;
+      --animation-state: running;
+
+      display: grid;
+      /* Placing header and cards in the same grid cell to stack them */
+      /* Both elements use grid-area: 1/1 to overlap within the same area */
+      grid-area: 1/1;
+      min-block-size: 700px;
+      place-items: center;
+
+      &:has(.avatar-link-wrapper:is(:hover, :focus-visible, :active)) {
+        --animation-state: paused;
+        /* Reduces opacity of non-hovered avatars to create a layered effect */
+        --avatar-opacity: 0.4;
+      }
+    }
+  }
+
+  .card {
+    padding: 0;
+
+    /* lg-n-above */
+    @media (width >=1024px) {
+      --radius: min(620px, 40cqi);
+      --offset-per-child: calc(360deg / (var(--nth-siblings) + 1));
+      --angle-offset: calc(var(--nth-child) * var(--offset-per-child));
+      --inline-ratio: 1/1;
+      /* Keeps the horizontal scaling unchanged */
+      --block-ratio: 1/2;
+      /* Reduces vertical scaling, making it an oval */
+
+      /* Adjusts tooltip direction based on avatar position */
+      /* Future improvement: Replace with the sign() CSS function when it becomes widely supported */
+      /* Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/sign */
+      --direction: min(max(calc(cos((var(--angle) + var(--angle-offset))) * -100), -1), 1);
+
+      /* Stack all cards in the same grid cell */
+      grid-area: 1/1;
+
+      /* Based on Bramus' article, modified with inline/block ratios to create an oval shape */
+      /* Source: https://web.dev/articles/css-trig-functions */
+
+      translate: calc(cos((var(--angle) + var(--angle-offset))) * var(--radius) * var(--inline-ratio))
+        calc(sin((var(--angle) + var(--angle-offset))) * var(--radius) * var(--block-ratio) * -1);
+
+      animation: adjust-angle linear 40s infinite reverse var(--animation-state);
+    }
+  }
+
+  /* Continuously rotates the avatars in a circular motion */
+  @keyframes adjust-angle {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  .avatar-link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-1);
+
+    &:is(:hover, :focus-visible, :active) {
+      --avatar-img-scale: 1.1;
+      --avatar-opacity: 1;
+      --tooltip-opacity: 1;
+      --tooltip-visibility: visible;
+    }
+
+    /* lg-n-below */
+    @media (width < 1024px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .visual {
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px 0 oklch(0 0 0 / 10%);
+    inline-size: 240px;
+    opacity: var(--avatar-opacity);
+    overflow: clip;
+    transition: opacity 0.3s ease;
+
+    /* lg-n-above */
+    @media (width >=1024px) {
+      inline-size: 144px;
+      border-radius: 1e5px;
+    }
+  }
+
+  .avatar-img {
+    background-color: var(--surface-2);
+    block-size: 100%;
+    display: block;
+    inline-size: 100%;
+    object-fit: cover;
+    scale: var(--avatar-img-scale, 1);
+    transition: scale 0.3s ease;
+  }
+
+  .tooltiptext {
+    display: grid;
+    gap: 4px;
+
+    /* lg-n-above */
+    @media (width >=1024px) {
+      position: absolute;
+      /* Adjusts tooltip placement based on avatar position */
+      /* Moves the tooltip to the left or right depending on the avatar's location */
+      /* --direction is either 1 (right) or -1 (left) */
+      max-inline-size: 20ch;
+      opacity: var(--tooltip-opacity);
+      transition-duration: 0.3s;
+      transition-property: opacity, visibility;
+      transition-timing-function: ease;
+      translate: 110% 0;
+      visibility: var(--tooltip-visibility);
+
+      /* make the tooltips non-interactive */
+      pointer-events: none;
+      user-select: none;
+
+      /* Adjusts text alignment based on avatar position */
+      /* Ensures the tooltip text aligns properly when shifted left or right */
+      @container style(--direction: -1) {
+        text-align: end;
+        translate: -110% 0;
+      }
+    }
+  }
+
+  .team-name {
+    font: var(--title);
+  }
 }
 
-.name {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: rgba(55, 65, 81, 1);
-}
-
-.message {
-  margin-top: 1rem;
-  color: rgba(107, 114, 128, 1);
-}
-</style> -->
-
-<template>
-  <div class="relative w-full flex overflow-hidden shadow-2xl">
-    <!-- Compteur -->
-    <div class="absolute top-5 right-5 bg-gray-600 text-white text-sm px-2 rounded-full z-10">
-      {{ currentIndex + 1 }} / {{ images.length }}
-    </div>
-
-    <!-- Images et captions -->
-    <div class="relative w-full h-96">
-      <img
-        :src="images[currentIndex].src"
-        alt="Image"
-        class="absolute inset-0 h-full w-full object-cover opacity-70 transition-opacity duration-500"
-      />
-      <figcaption
-        class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center bg-gray-300 bg-opacity-25"
-      >
-        {{ images[currentIndex].caption }}
-      </figcaption>
-    </div>
-
-    <!-- Bouton précédent -->
-    <button @click="prevImage"
-      class="absolute left-5 top-1/2 transform -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
-      <svg class="w-8 h-8 text-gray-500 hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path>
-      </svg>
-    </button>
-
-    <!-- Bouton suivant -->
-    <button @click="nextImage"
-      class="absolute right-5 top-1/2 transform -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
-      <svg class="w-8 h-8 text-gray-500 hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
-      </svg>
-    </button>
-  </div>
-</template>
-
-<script setup>
-import { ref, onMounted, onUnmounted } from "vue";
-
-// Importation des images localement
-import img1 from "@/assets/Images/hero-image0.jpg";
-import img2 from "@/assets/Images/hero-image0.jpg";
-import img3 from "@/assets/Images/hero-image0.jpg";
-import img4 from "@/assets/Images/hero-image0.jpg";
-import img5 from "@/assets/Images/hero-image0.jpg";
-
-// Liste des images avec leurs légendes
-const images = ref([
-  { src: img1, caption: "Plage ensoleillée uiçh ) içgzd ihhà ihdb ) bus ji$ nhda qe  qnih dioenpqbfgl 🌞" },
-  { src: img2, caption: "Un chat curieux 🐱" },
-  { src: img3, caption: "Un chien fidèle 🐶" },
-  { src: img4, caption: "Un magnifique paysage lore 🌄" },
-  { src: img5, caption: "Textures et motifs artistiques 🎨" }
-]);
-
-const currentIndex = ref(0);
-let interval = null;
-
-// Fonction pour aller à l'image précédente
-const prevImage = () => {
-  currentIndex.value = currentIndex.value > 0 ? currentIndex.value - 1 : images.value.length - 1;
-};
-
-// Fonction pour aller à l'image suivante
-const nextImage = () => {
-  currentIndex.value = (currentIndex.value + 1) % images.value.length;
-};
-
-// Défilement automatique toutes les 3 secondes
-onMounted(() => {
-  interval = setInterval(nextImage, 3000);
-});
-
-// Nettoyage du timer quand le composant est détruit
-onUnmounted(() => {
-  clearInterval(interval);
-});
-</script>
-
-<style scoped>
-/* Ajoutez vos styles ici si nécessaire */
 </style>

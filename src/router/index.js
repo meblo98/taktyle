@@ -36,6 +36,11 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
     },
     {
+      path: '/success',
+      name: 'suceess',
+      component: () => import('../views/SuccesStoreView.vue'),
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../views/Admin/LoginView.vue'),
