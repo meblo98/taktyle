@@ -335,7 +335,7 @@ export default {
 
 .contact_us_6 .submit-btn {
 	width: 98%;
-	background-color: #03a9f4;
+	background-color: #0A195C;
 	height: 60px;
 	font-size: 20px;
 	font-weight: 700;
@@ -434,7 +434,7 @@ export default {
 	margin-right: 0px;
 	margin-bottom: 10px;
 	margin-left: 0px;
-	color: #03a9f4;
+	color: #0A195C;
 }
 
 .contact_us_6 .text-blk.map-contactus-subhead {
