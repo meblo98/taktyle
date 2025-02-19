@@ -22,7 +22,7 @@
   
         <!-- Bouton -->
         <router-link
-        to="solution"
+        to="success"
           class="w-full px-4 py-2 border rounded-full flex justify-center items-center gap-2
                  hover:shadow-md transition-all duration-300"
           :style="{ borderColor: card.color, backgroundColor: card.buttonBg, color: card.color }"

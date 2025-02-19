@@ -1,6 +1,6 @@
 <template>
   <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-    <a href="#" class="block mx-3">
+    <a href="solution" class="block mx-3">
   <img
     alt=""
     src="@/assets/Images/image eduxel accueil.png"
@@ -14,7 +14,7 @@
   </p>
 </a>
 
-<a href="#" class="block mx-3">
+<a href="solution" class="block mx-3">
   <img
     alt=""
     src="@/assets/Images/image nafabi accueil.png"
@@ -27,7 +27,7 @@
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
   </p>
 </a>
-<a href="#" class="block mx-3">
+<a href="solution" class="block mx-3">
   <img
     alt=""
     src="@/assets/Images/yokoo accueil.png"
@@ -41,7 +41,7 @@
   </p>
 </a>
 
-<a href="#" class="block mx-3">
+<a href="solution" class="block mx-3">
   <img
     alt=""
     src="@/assets/Images/image leadiz accueil.jpg"
