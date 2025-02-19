@@ -44,7 +44,7 @@
 <a href="solution" class="block mx-3">
   <img
     alt=""
-    src="@/assets/Images/image leadiz accueil.jpg"
+    src="@/assets/Images/leadiz.webp"
     class="h-64 w-full object-cover sm:h-80 lg:h-96"
   />
 

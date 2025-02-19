@@ -94,7 +94,7 @@
 
       <div class="flex flex-col md:px-10 md:flex-row items-center justify-center gap-6">
         <div>
-          <img src="@/assets/Images/yooko.webp" alt="Featured Image 1"
+          <img src="@/assets/Images/eduxel-image.jpg" alt="Featured Image 1"
             class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-green-500 rounded-b-lg">
             <div class="text-white space-y-4">
