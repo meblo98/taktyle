@@ -1,8 +1,9 @@
 <template>
      <NavBar />
 
-    <section class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('@/assets/Images/hero-image.jpg');">
+    <section class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('@/assets/Images/hero-image.jpg'); margin-top: 10vh;">
       <div class="max-w-md w-full p-8 rounded-lg shadow-md glass-bg">
+        <h1 class="font-bold mb-5">Postuler pour une candidature spontannée</h1>
         <form @submit.prevent="submitForm">
           <!-- Nom complet -->
           <div class="mb-6">
