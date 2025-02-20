@@ -5,7 +5,7 @@
 			<form class="form-box">
 				<div class="container-block form-wrapper">
 					<div class="mob-text">
-						<p class="text-blk contactus-head">
+						<p class="text-blk text-orange-600 contactus-head">
 							Prenez contact
 						</p>
 						<p class="text-blk contactus-subhead">
@@ -253,7 +253,7 @@ export default {
 }
 
 .contact_us_6 .textinput {
-	width: 98%;
+	width: 100%;
 	min-height: 150px;
 	padding-top: 20px;
 	padding-right: 15px;
@@ -312,7 +312,7 @@ export default {
 .contact_us_6 .form-box {
 	z-index: 2;
 	margin-top: 0px;
-	margin-right: 48px;
+	margin-right: 50px;
 	margin-bottom: 0px;
 	margin-left: 0px;
 }
@@ -380,7 +380,7 @@ export default {
 	margin-right: 0px;
 	margin-bottom: 10px;
 	margin-left: 0px;
-	color: #0A195C;
+	color: #F54A00;
 }
 
 .contact_us_6 .text-blk.map-contactus-subhead {

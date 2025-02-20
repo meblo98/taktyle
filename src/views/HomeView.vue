@@ -31,7 +31,8 @@
                 <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
                 <span class="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
               </div>
-            </div>       
+            </div>
+            <p class="row gx-4 justify-content-center font-monospace font-bold mb-5">Explorez ces success stories et inspirez-vous !</p>
           <SuccessCard
           link="/solution"
           />
