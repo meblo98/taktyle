@@ -46,20 +46,6 @@
               solutions innovantes qui favorisent la croissance durable et l'inclusion dans un marché global. </p>
           </div>
         </div>
-
-        <!-- <div class="flex flex-col md:flex-row-reverse items-center md:items-start md:justify-between">
-   
-      <div class="md:w-5/12">
-        <h2 class="text-2xl font-bold mb-4">Notre Vision</h2>
-        <p class="text-gray-600 mb-6 text-center md:text-left">
-          Nous visons à être un leader dans la transformation digitale des entreprises africaines, en offrant des solutions innovantes qui favorisent la croissance durable et l'inclusion dans un marché global.        </p>
-      </div>
-      
-     
-      <div class="md:w-5/12 max-w-sm">
-        <img class="rounded-md border-none" src="@/assets/Images/vision.svg" alt="Bible Trivia Image">
-      </div>
-    </div> -->
       </div>
 
     </section>
@@ -69,8 +55,7 @@
         <div class="lg:flex lg:items-center">
           <div class="w-full space-y-12 lg:w-1/2 ">
             <div>
-              <h1 class="text-3xl font-semibold text-gray-800 text-center capitalize lg:text-4xl dark:text-white">Nos Valeurs</h1>
-
+              <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Nos Valeurs</h1>
               <div class="mt-2">
                 <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
                 <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
