@@ -44,7 +44,7 @@
 					</button>
 				</div>
 			</form>
-			<div class="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
+			<div class="responsive-cell-block wk-desk-5 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
 				<div class="map-part">
 					<p class="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
 						Nous contacter à l'adresse
