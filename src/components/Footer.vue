@@ -113,7 +113,7 @@
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px"
                 />
-            <p><i class="fas fa-home mr-3"></i> 4 cité Cpi, VDN Dakar</p>
+            <p><i class="fas fa-home mr-3"></i> <a href="#">4 cité Cpi, VDN Dakar</a></p>
             <p><i class="fas fa-envelope mr-3"></i> contact@taktylgroup.com</p>
             <p><i class="fas fa-phone mr-3"></i> +221 77 123 45 67</p>
           </div>

@@ -15,77 +15,74 @@
       </div>
       <div class="flex flex-col md:px-10 md:flex-row items-center justify-center gap-6">
         <div>
-          <img src="@/assets/Images/yooko.webp" alt="Featured Image 1"
-            class="rounded-t-xl" />
+          <img src="@/assets/Images/yooko.webp" alt="Featured Image 1" class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-orange-500 rounded-b-lg">
             <div class="text-white space-y-4">
-              <h3 class="text-xl font-bold lead-xl bold">Yokoo</h3>
-              <div class="text-lg font-light">
-               📌 Yokoo : La solution digitale pour les commerçants et PME
-                Yokoo est l’outil indispensable pour les commerçants et entrepreneurs souhaitant une gestion fluide et efficace de leur activité. Pensé pour les réalités du marché africain, il offre une interface simple et intuitive adaptée aux besoins des entreprises locales.
-                <br/>✅ Avec Yokoo, vous pouvez :
-                <br/>✔ Facturer rapidement vos clients avec des modèles professionnels.
-                <br/>✔ Suivre les paiements et automatiser les relances des factures impayées.
-                <br/>✔ Gérer vos dépenses et organiser votre trésorerie en toute simplicité.
-                <br/>✔ Piloter votre stock pour éviter les ruptures et optimiser votre approvisionnement.
-                <br/>✔ Assurer la comptabilisation automatique de vos opérations, sans effort.
-                <br/>💡 Adoptez Yokoo et digitalisez votre gestion commerciale dès aujourd’hui !
-                <!-- [Essayez Yokoo →] -->
-
+              <h3 class="text-xl font-bold lead-xl font-extrabold">Yokoo – La gestion commerciale et comptable
+                simplifiée</h3>
+              <div class="text-lg justify-start font-light">
+                <ul class="flex flex-col ">
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Facturation et devis – Créez et envoyez vos factures en un clic.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌 Suivi des paiements – Relancez automatiquement vos clients et
+                      fournisseurs.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌 Rapprochement bancaire – Associez vos transactions à vos
+                      factures pour un suivi précis.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌 Tableau de bord financier – Analysez vos performances avec
+                      des indicateurs clés.</span>
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- <div class="flex justify-between pt-8">
-                    <ul class="flex flex-col gap-y-2.5">
-                        <li class="flex space-x-3 text-white">
-                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                            <li class="flex space-x-3 text-white">
-                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                            <li class="flex space-x-3 text-white">
-                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                    </ul>
-                    <div class="flex flex-col justify-end">
-                        <a href="#" class="py-3 px-6 bg-white text-primary-200 paragraph-m  rounded-full">Learn More</a>
-                    </div>
-                </div> -->
+
+            <div class="flex justify-between pt-8">
+              <div class="flex flex-col justify-end">
+                <a href="#" class="py-3 px-6 bg-white text-primary-200 paragraph-m  rounded-full">👉 Découvrir Yokoo</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="">
-          <img src="@/assets/Images/nafabi.webp" alt="Featured Image 1"
-            class="rounded-t-xl" />
+          <img src="@/assets/Images/nafabi.webp" alt="Featured Image 1" class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-blue-600 rounded-b-lg">
             <div class="text-white space-y-4">
-              <h3 class="text-xl font-bold lead-xl bold">NAFABI</h3>
-              <div class="text-lg font-light">
-                "Prenez le contrôle de vos finances avec NAFABI !
-                Facturation, gestion des dépenses, paie et bien plus encore. Une solution intuitive et puissante pour
-                une gestion financière transparente et efficace. Votre partenaire pour une santé financière optimale !
+              <h3 class="text-xl font-bold lead-xl bold">Nafabi – La gestion financière centralisée pour les entreprises</h3>
+              <div class="text-lg justify-start font-light">
+                <ul class="flex flex-col ">
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌 Facturation des services – Créez, envoyez et suivez vos
+                      factures en toute simplicité.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌 Suivi des paiements – Relancez automatiquement vos clients et
+                      fournisseurs.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌 Gestion des dépenses – Suivez et catégorisez toutes vos
+                      charges pour une meilleure visibilité.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Gestion de la paie – Automatisez le calcul et le suivi des salaires en toute conformité.
+                    </span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Trésorerie optimisée – Visualisez en temps réel vos flux de trésorerie pour une meilleure prise de décision.
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- <div class="flex justify-between pt-8">
-                   <ul class="flex flex-col gap-y-2.5">
-                        <li class="flex space-x-3 text-white">
-                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                            <li class="flex space-x-3 text-white">
-                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                            <li class="flex space-x-3 text-white">
-                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                    </ul>
+            <div class="flex justify-between pt-8">
                     <div class="flex flex-col justify-end">
-                        <a href="#" class="py-3 px-6 bg-white text-primary-200 paragraph-m  rounded-full">Learn More</a>
+                        <a href="#" class="py-3 px-6 bg-white text-primary-200 paragraph-m  rounded-full">👉 Découvrir Nafabi</a>
                     </div>
-                </div> -->
+                </div>
           </div>
         </div>
       </div>
@@ -94,71 +91,67 @@
 
       <div class="flex flex-col md:px-10 md:flex-row items-center justify-center gap-6">
         <div>
-          <img src="@/assets/Images/eduxel-image.jpg" alt="Featured Image 1"
-            class="rounded-t-xl" />
+          <img src="@/assets/Images/eduxel-image.jpg" alt="Featured Image 1" class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-green-500 rounded-b-lg">
             <div class="text-white space-y-4">
-              <h3 class="text-xl font-bold lead-xl bold">Eduxel</h3>
-              <div class="text-lg font-light">
-                Transformez la gestion de votre établissement scolaire avec Eduxel !
-                Gestion académique, financière et administrative simplifiée. Offrez à votre école les outils modernes
-                pour une administration fluide et une meilleure expérience éducative. L'innovation au service de
-                l'éducation !
+              <h3 class="text-xl font-bold lead-xl bold">Eduxel – La digitalisation de la gestion scolaire</h3>
+              <div class="text-lg justify-start font-light">
+                <ul class="flex flex-col ">
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Gestion des élèves et enseignants – Organisez toutes les informations administratives facilement.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Paiements et comptabilité – Automatisez les factures et le suivi des frais de scolarité.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌 Suivi pédagogique – Digitalisez les bulletins, emplois du temps et évaluations.
+                    </span>  
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌 Communication simplifiée – Envoyez des notifications et emails aux parents et enseignants.
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- <div class="flex justify-between pt-8">
-                    <ul class="flex flex-col gap-y-2.5">
-                        <li class="flex space-x-3 text-white">
-                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                            <li class="flex space-x-3 text-white">
-                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                            <li class="flex space-x-3 text-white">
-                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                    </ul>
+            <div class="flex justify-between pt-8">
                     <div class="flex flex-col justify-end">
-                        <a href="#" class="py-3 px-6 bg-white text-primary-200 paragraph-m  rounded-full">Learn More</a>
+                        <a href="#" class="py-3 px-6 bg-white text-primary-200 paragraph-m  rounded-full">👉 Découvrir eduxel
+                        </a>
                     </div>
-                </div> -->
+                </div>
           </div>
         </div>
         <div class="">
-          <img src="@/assets/Images/leadeiz.webp" alt="Featured Image 1"
-            class="rounded-t-xl" />
+          <img src="@/assets/Images/leadeiz.webp" alt="Featured Image 1" class="rounded-t-xl" />
           <div class="px-9 pt-10 pb-14 bg-blue-600 rounded-b-lg">
             <div class="text-white space-y-4">
-              <h3 class="text-xl font-bold lead-xl bold">Leadiz</h3>
-              <div class="text-lg font-light">
-                Boostez vos ventes avec Leadiz !
-                Prospection, gestion de la relation client (PreCRM et CRM) et suivi des opportunités. Maximisez vos
-                conversions et fidélisez vos clients grâce à une solution adaptée aux PME ambitieuses. Votre allié pour
-                une croissance durable !
+              <h3 class="text-xl font-bold lead-xl bold">Leadiz – Boostez vos ventes avec un CRM puissant</h3>
+              <div class="text-lg justify-start font-light">
+                <ul class="flex flex-col ">
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Suivi des opportunités – Visualisez votre pipeline commercial en temps réel.
+                    </span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Gestion des leads – Centralisez et qualifiez vos prospects efficacement.</span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Automatisation des relances – Ne manquez jamais une opportunité grâce aux rappels automatiques.
+                    </span>
+                  </li>
+                  <li class="flex space-x-3 text-white">
+                    <span class="paragraph-l">📌  Analyse des performances – Évaluez votre taux de conversion et optimisez votre stratégie.</span>
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- <div class="flex justify-between pt-8">
-                   <ul class="flex flex-col gap-y-2.5">
-                        <li class="flex space-x-3 text-white">
-                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                            <li class="flex space-x-3 text-white">
-                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                            <li class="flex space-x-3 text-white">
-                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png" alt="checked--v1" class="w-6 h-6"/>
-                            <span class="paragraph-l font-bold">Item 1</span>
-                        </li>
-                    </ul>
+            <div class="flex justify-between pt-8">
                     <div class="flex flex-col justify-end">
-                        <a href="#" class="py-3 px-6 bg-white text-primary-200 paragraph-m  rounded-full">Learn More</a>
+                        <a href="#" class="py-3 px-6 bg-white text-primary-200 paragraph-m  rounded-full">👉 Découvrir Leadiz
+                        </a>
                     </div>
-                </div> -->
+                </div>
           </div>
         </div>
       </div>

@@ -10,7 +10,8 @@
   <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Eduxel</h3>
 
   <p class="mt-2 max-w-sm text-gray-700">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+    Transformez la gestion scolaire avec un outil digital conçu pour simplifier l’administration et améliorer l’expérience éducative.
+
   </p>
 </a>
 
@@ -24,7 +25,7 @@
   <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Nafabi</h3>
 
   <p class="mt-2 max-w-sm text-gray-700">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+    Prenez le contrôle de vos finances avec une solution intuitive pour la facturation, la gestion des paiements, des dépenses et de la trésorerie.
   </p>
 </a>
 <a href="solution" class="block mx-3">
@@ -37,7 +38,8 @@
   <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Yokoo</h3>
 
   <p class="mt-2 max-w-sm text-gray-700">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+    Simplifiez votre gestion commerciale et comptable avec une solution tout-en-un pour facturer, suivre vos paiements et optimiser votre trésorerie.
+
   </p>
 </a>
 
@@ -51,7 +53,8 @@
   <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Leadiz.</h3>
 
   <p class="mt-2 max-w-sm text-gray-700">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+    Maximisez vos ventes et boostez votre performance commerciale avec un CRM intuitif et adapté aux besoins des entreprises africaines.
+
   </p>
 </a>
   </div>
