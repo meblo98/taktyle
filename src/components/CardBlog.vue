@@ -1,5 +1,5 @@
 <template>
-	<div class="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+	<div class="blog-container">
 		<!-- Boucle sur les blogs récupérés -->
 		<div v-for="(blog, index) in blogs" :key="index"
 			class="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800">
@@ -112,6 +112,25 @@ export default {
 };
 </script>
 
+
 <style scoped>
-/* Vos styles existants sont conservés */
+	/* Conteneur principal */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+/* Responsivité */
+@media (max-width: 768px) {
+  .blog-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

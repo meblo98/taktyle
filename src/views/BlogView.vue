@@ -1,12 +1,10 @@
 <template>
-       <NavBar />
+  <NavBar />
 
-    <div class="card"
-     style="margin-top:20vh;margin-bottom:10vh;"
-    >
-    <CardBlog/>
-    </div>
-    <Footer/>
+  <div class="" style="margin-top:20vh;margin-bottom:10vh;">
+    <CardBlog />
+  </div>
+  <Footer />
 
 </template>
 <script>
