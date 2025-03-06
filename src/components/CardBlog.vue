@@ -17,7 +17,7 @@
 			<div>
 				<!-- Image dynamique -->
 				<router-link :to="'/blog/' + blog.id">
-					<img :src="'http://127.0.0.1:8000/storage//' + blog.image || '@/assets/Images/hero-image.jpg'"
+					<img :src="'http://127.0.0.1:8000/storage/' + blog.image || '@/assets/Images/hero-image.jpg'"
 						alt="Image du blog" class="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500">
 				</router-link>
 				<!-- Titre dynamique -->
