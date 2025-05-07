@@ -1,6 +1,6 @@
 <template>
   <!-- hero section -->
-  <section class="relative py-32 lg:py-36 bg-white-100">
+  <section class="relative py-32 lg:py-5 bg-white-100">
     <!-- component -->
     <div class="bg-white relative mx-5  flex items-center  n justify-center overflow-hidden z-50 ">
 
